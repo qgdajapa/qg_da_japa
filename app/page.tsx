@@ -4,7 +4,7 @@ export default function Home() {
   className="min-h-screen bg-fixed bg-center text-white"
   style={{
     backgroundImage:
-      'linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.8)), url("/Fundo.png")',
+      'linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.8)), url("/fundo.png")',
   }}
 >
       
