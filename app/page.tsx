@@ -1,6 +1,7 @@
 export default function Home() {
   return (
     <main
+    id="inicio"
   className="min-h-screen bg-fixed bg-center text-white"
   style={{
     backgroundImage:
@@ -17,26 +18,27 @@ export default function Home() {
 />
 
         <nav className="hidden md:flex gap-8 text-sm">
-          <a href="#" className="hover:text-yellow-400 transition">
+          <a href="#inicio" className="hover:text-yellow-400 transition">
             Início
           </a>
 
-          <a href="#" className="hover:text-yellow-400 transition">
+          <a href="#produtos" className="hover:text-yellow-400 transition">
             Produtos
           </a>
 
-          <a href="#" className="hover:text-yellow-400 transition">
+          <a href="#sobre" className="hover:text-yellow-400 transition">
             Sobre nós
           </a>
 
-          <a href="#" className="hover:text-yellow-400 transition">
+          <a href="#contato" className="hover:text-yellow-400 transition">
             Contato
           </a>
         </nav>
       </header>
 
       {/* ÁREA PRINCIPAL */}
-      <section className="min-h-[10vh] flex items-center justify-center text-center px-70">
+      <section 
+      className="min-h-[10vh] flex items-center justify-center text-center px-70">
         <div>
           <img
   src="/slogan1.png"
@@ -44,12 +46,15 @@ export default function Home() {
   className="w-[420px] md:w-[630px] mx-auto object-contain -mt-59"
 />
 
-          <button className="mt-8 bg-yellow-400 text-black font-bold px-8 py-3 rounded-full hover:bg-yellow-300 transition">
-            Ver produtos
-          </button>
+          <a
+  href="#produtos"
+  className="inline-block mt-8 bg-yellow-400 text-black font-bold px-8 py-3 rounded-full hover:bg-yellow-300 transition"
+>
+  Ver produtos
+</a>
         </div>
       </section>
-<section className="px-6 py-20 bg-transparentnpx.cmd localtunnel --port 3000">
+<section id="produtos" className="px-6 py-20 bg-transparent">
   <div className="max-w-6xl mx-auto">
     
     <h3 className="text-3xl md:text-4xl font-bold text-center text-white">
@@ -62,20 +67,41 @@ export default function Home() {
 
     <div className="grid grid-cols-2 md:grid-cols-5 gap-5">
       
-      <div className="flex flex-col items-center justify-center p-6 rounded-2xl bg-zinc-900/80 border border-zinc-800 hover:border-yellow-400 transition cursor-pointer">
-        <img src="/icone1.png" alt="Essências" className="w-20 h-20 object-contain mb-4" />
-        <span className="font-semibold">Essências</span>
-      </div>
+      <a
+  href="/essencias"
+  className="flex flex-col items-center justify-center p-6 rounded-2xl bg-zinc-900/80 border border-zinc-800 hover:border-yellow-400 transition cursor-pointer"
+>
+  <img
+    src="/icone1.png"
+    alt="Essências"
+    className="w-20 h-20 object-contain mb-4"
+  />
+  <span className="font-semibold">Essências</span>
+</a>
 
-      <div className="flex flex-col items-center justify-center p-6 rounded-2xl bg-zinc-900/80 border border-zinc-800 hover:border-yellow-400 transition cursor-pointer">
-        <img src="/icone2.png" alt="Carvões" className="w-20 h-20 object-contain mb-4" />
-        <span className="font-semibold">Carvões</span>
-      </div>
+      <a
+  href="/carvoes"
+  className="flex flex-col items-center justify-center p-6 rounded-2xl bg-zinc-900/80 border border-zinc-800 hover:border-yellow-400 transition cursor-pointer"
+>
+  <img
+    src="/icone2.png"
+    alt="Carvões"
+    className="w-20 h-20 object-contain mb-4"
+  />
+  <span className="font-semibold">Carvões</span>
+</a>
 
-      <div className="flex flex-col items-center justify-center p-6 rounded-2xl bg-zinc-900/80 border border-zinc-800 hover:border-yellow-400 transition cursor-pointer">
-        <img src="/icone3.png" alt="Rosh" className="w-20 h-20 object-contain mb-4" />
-        <span className="font-semibold">Rosh</span>
-      </div>
+      <a
+  href="/rosh"
+  className="flex flex-col items-center justify-center p-6 rounded-2xl bg-zinc-900/80 border border-zinc-800 hover:border-yellow-400 transition cursor-pointer"
+>
+  <img
+    src="/icone3.png"
+    alt="Rosh"
+    className="w-20 h-20 object-contain mb-4"
+  />
+  <span className="font-semibold">Rosh</span>
+</a>
 
       <div className="flex flex-col items-center justify-center p-6 rounded-2xl bg-zinc-900/80 border border-zinc-800 hover:border-yellow-400 transition cursor-pointer">
         <img src="/icone4.png" alt="Acessórios" className="w-20 h-20 object-contain mb-4" />
@@ -105,7 +131,7 @@ export default function Home() {
 
       <div className="bg-zinc-900/90 border border-zinc-800 rounded-2xl overflow-hidden hover:border-yellow-400 transition">
         <img
-          src="/essencia.jpg"
+          src="/essencia.jpeg"
           alt="Essências"
           className="w-full h-64 object-cover"
         />
@@ -124,8 +150,8 @@ export default function Home() {
 
       <div className="bg-zinc-900/90 border border-zinc-800 rounded-2xl overflow-hidden hover:border-yellow-400 transition">
         <img
-          src="/carvao.jpg"
-          alt="Carvões"
+          src="/rosh.jpeg"
+          alt="Rosh"
           className="w-full h-64 object-cover"
         />
 
@@ -141,10 +167,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-zinc-900/90 border border-zinc-800 rounded-2xl overflow-hidden hover:border-yellow-400 transition">
+       <div className="bg-zinc-900/90 border border-zinc-800 rounded-2xl overflow-hidden hover:border-yellow-400 transition">
         <img
-          src="/rosh.jpg"
-          alt="Rosh"
+          src="/carvao.jpeg"
+          alt="Carvões"
           className="w-full h-64 object-cover"
         />
 
@@ -165,7 +191,7 @@ export default function Home() {
   </div>
 </section>
 </section>
-<section className="px-6 py-20 bg-black/10">
+<section id="sobre" className="px-6 py-20 bg-black/10">
   <div className="max-w-5xl mx-auto text-center">
 
     <p className="text-yellow-400 uppercase tracking-[0.3em] text-sm mb-4">
@@ -189,7 +215,7 @@ export default function Home() {
   </div>
 </section>
 
-<section className="px-6 py-20 bg-transparent">
+<section id="contato" className="px-6 py-20 bg-transparent">
   <div className="max-w-5xl mx-auto">
 
     <div className="text-center mb-12">
