@@ -55,6 +55,14 @@ export default function Home() {
             >
               Contato
             </a>
+
+            <a
+  href="/admin/login"
+  className="hover:text-yellow-400 transition"
+>
+  Admin
+</a>
+
           </nav>
         </div>
       </header>
